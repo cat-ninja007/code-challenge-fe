@@ -1,5 +1,6 @@
 import { FC } from "react";
 import Image from "next/image";
+import HiddenMenu from "./HiddenMenu";
 
 import CourtneyLogo from '../../../public/images/courtney-logo.png'
 import BurgerMenu from '../../../public/icons/utils-icon/burger-menu.png'
@@ -16,9 +17,8 @@ const Header:FC = () => {
           <div className="header-burger-menu">
             <Image src={BurgerMenu} alt="burger-menu" />
           </div>
-
-
         </div>
+        <HiddenMenu />
       </header>
     </>
   )
