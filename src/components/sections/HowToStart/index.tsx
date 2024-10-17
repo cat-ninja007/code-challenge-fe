@@ -15,10 +15,10 @@ const HowToStart: FC = () => {
         <Subtitle text="How to start" color="courtney-white" />
         <Title text="Easy Process" color="courtney-white" />
         <div className="process-paragraph">
-          <p className="text-center text-courtney-dark-blue">We specialize in helping you build a team of expert developers, testers, and leaders.</p>
+          <p className="text-center lg:font-bold text-courtney-dark-blue">We specialize in helping you build a team of expert developers, testers, and leaders.</p>
         </div>
       </div>
-      <div className="process-content">
+      <div className="process-content lg:flex lg:items-end lg:justify-center lg:space-x-10">
         <ProcessCard number="01" title="You Ask" image={YouAsk}/>
         <ProcessCard number="02" title="We Proceed" image={WeProceed}/>
         <ProcessCard number="03" title="Negotiate" image={Negotiate}/>
