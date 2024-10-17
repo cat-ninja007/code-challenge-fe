@@ -27,7 +27,7 @@ const SolutionsCard: FC<ISolutionsCard> = (props: ISolutionsCard) => {
       flex-shrink-0
       ">
       <div className="card-image bg-courtney-bright-yellow w-32 md:w-28 lg:w-16 mb-9">
-        <Image src={image} alt="architect-solutions" className="w-32" />
+        <Image src={image} alt={title} className="w-32" />
       </div>
       <div className="card-description md:w-3/4">
         <div className="card-title self-start">

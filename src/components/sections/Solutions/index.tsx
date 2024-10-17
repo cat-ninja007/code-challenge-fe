@@ -72,7 +72,7 @@ const Solutions: FC = () => {
 
   return (
     <>
-      <div className="solutions-container px-4 mt-8">
+      <div className="solutions-container px-4 mt-8 mb-32">
         <div className="solution-header block lg:hidden">
           <Subtitle text="Solutions" color="courtney-dark-blue" />
           <Title
