@@ -10,11 +10,11 @@ const ButtonReguler: FC<IButtonReguler> = (props: IButtonReguler) => {
   const [isActive, setIsActive] = useState(false);
 
   const handleMouseDown = () => {
-    setIsActive(true); // Saat tombol ditekan
+    setIsActive(true); 
   };
 
   const handleMouseUp = () => {
-    setIsActive(false); // Saat tombol dilepaskan (kembali ke gradien)
+    setIsActive(false); 
   };
 
   return (
