@@ -9,7 +9,7 @@ const Header:FC = () => {
   return (
     <>
       <header>
-        <div className="header-section px-4 h-20 flex justify-between items-center border-2 border-courtney-dark-blue">
+        <div className="header-section px-4 h-20 flex justify-between items-center">
           <div className="header-image-container w-36">
             <Image src={CourtneyLogo} alt="courtney-logo" />
           </div>
