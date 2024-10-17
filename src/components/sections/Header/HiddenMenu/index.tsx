@@ -4,12 +4,18 @@ import Image from "next/image";
 import ChevronDown from "../../../../public/icons/utils-icon/chevron-down.png";
 import CloseButton from "../../../../public/icons/utils-icon/close-button.png";
 
-const HiddenMenu: FC = () => {
+interface IHiddenMenu {
+  onClose: () => void;
+}
+const HiddenMenu: FC<IHiddenMenu> = (props: IHiddenMenu) => {
+  const { onClose } = props;
   return (
     <>
-      <div className="hidden-menu-container px-9 h-screen border-2 border-red-500 absolute top-0 left-0 right-0">
+      <div className="hidden-menu-container bg-courtney-white px-9 h-screen border-2 border-red-500 absolute top-0 left-0 right-0">
         <div className="close-button-container pt-6 pb-20 flex justify-end">
-          <Image src={CloseButton} alt="close-button"/>
+          <div onClick={onClose} className="cursor-pointer">
+            <Image src={CloseButton} alt="close-button"/>
+          </div>
         </div>
         <div className="hidden-menu-navigation mb-16">
           <nav>

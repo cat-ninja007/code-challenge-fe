@@ -1,4 +1,5 @@
-import { FC } from "react";
+'use client'
+import { FC, useState } from "react";
 import Image from "next/image";
 import HiddenMenu from "./HiddenMenu";
 
@@ -6,6 +7,11 @@ import CourtneyLogo from '../../../public/images/courtney-logo.png'
 import BurgerMenu from '../../../public/icons/utils-icon/burger-menu.png'
 
 const Header:FC = () => {
+  const [isMenuVisible, setIsMenuVisible] = useState(false);
+
+  const toggleMenu = () => {
+    setIsMenuVisible(!isMenuVisible);
+  }
   return (
     <>
       <header>
@@ -14,11 +20,15 @@ const Header:FC = () => {
             <Image src={CourtneyLogo} alt="courtney-logo" />
           </div>
 
-          <div className="header-burger-menu">
+          <div className="header-burger-menu cursor-pointer" onClick={toggleMenu}>
             <Image src={BurgerMenu} alt="burger-menu" />
           </div>
         </div>
-        <HiddenMenu />
+        {
+          isMenuVisible && (
+            <HiddenMenu onClose={toggleMenu} />
+          )
+        }
       </header>
     </>
   )
