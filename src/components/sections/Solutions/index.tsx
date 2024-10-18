@@ -39,11 +39,11 @@ const Solutions: FC = () => {
   };
 
   // show prev card
-  const handlePrev = () => {
-    setCurrentIndex(
-      (prevIndex) => (prevIndex - 1 + solutions.length) % solutions.length
-    );
-  };
+  // const handlePrev = () => {
+  //   setCurrentIndex(
+  //     (prevIndex) => (prevIndex - 1 + solutions.length) % solutions.length
+  //   );
+  // };
 
   // Check if window size is mobile or desktop
   useEffect(() => {

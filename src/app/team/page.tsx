@@ -8,15 +8,29 @@ import HeroSection from "@/components/atom/HeroSection";
 import TeamCard from "@/components/atom/TeamCard";
 import { Title, Subtitle } from "@/components/atom/Text";
 
+// Define the interface for TeamMember
+interface TeamMember {
+  name: {
+    first: string;
+    last: string;
+  };
+  picture: {
+    thumbnail: string;
+  };
+  location: {
+    country: string;
+  };
+}
+
 const Team:FC = () => {
-  const [members, setMembers] = useState<any[]>([]); 
-  const [loading, setLoading] = useState(true); 
+  const [members, setMembers] = useState<TeamMember[]>([]); // Updated type
+  const [loading, setLoading] = useState(true); // State for loading
 
   useEffect(() => {
     const fetchTeamData = async () => {
       try {
-        const response = await axios.get("https://randomuser.me/api/?results=10"); 
-        setMembers(response.data.results); 
+        const response = await axios.get("https://randomuser.me/api/?results=10"); // Fetch data from API
+        setMembers(response.data.results); // Set the team members
       } catch (error) {
         console.error("Error fetching team data:", error); 
       } finally {
@@ -41,9 +55,8 @@ const Team:FC = () => {
         ) : (
           <div className="grid grid-cols-1 gap-4 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4"> 
             {members.map((member, index) => (
-              <div className="flex justify-center"> 
+              <div key={index} className="flex justify-center"> 
                 <TeamCard 
-                  key={index} 
                   name={`${member.name.first} ${member.name.last}`} 
                   position="Developer"
                   image={member.picture.thumbnail} 
