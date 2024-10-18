@@ -39,7 +39,7 @@ const ButtonArrow: FC<IButtonArrow> = (props: IButtonArrow) => {
       onBlur={() => setIsActive(false)}       
     >
       <button className="w-full h-14 text-courtney-white flex justify-center items-center">
-        {title}
+        <a href="/contactus">{title}</a> 
         <Image src={RightArrow} alt="right-arrow" className="relative -right-3"/>
         </button>
     </div>

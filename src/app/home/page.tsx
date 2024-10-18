@@ -6,6 +6,7 @@ import HowToStart from "@/components/sections/HowToStart";
 import Expertise from "@/components/sections/Expertise";
 import Specialized from "@/components/sections/Specialized";
 import Footer from "@/components/sections/Footer";
+import Contact from "@/components/Contact";
 
 const Home: FC = () => {
   return (
@@ -15,7 +16,7 @@ const Home: FC = () => {
       <Solutions />
       <HowToStart />
       <Expertise />
-      <Specialized />
+      <Contact />
       <Footer />
     </>
   );
