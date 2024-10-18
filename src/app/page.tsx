@@ -16,7 +16,7 @@ import Team from "./team/page";
 const App:FC = () => {
   return (
     <>
-      <Team />
+      <Home />
     </>
   )
 }

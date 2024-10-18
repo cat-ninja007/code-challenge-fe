@@ -22,24 +22,24 @@ const HiddenMenu: FC<IHiddenMenu> = (props: IHiddenMenu) => {
             <ul className="w-full flex flex-col gap-8 text-courtney-dark-blue">
               <li>
                 <a href="/" className="text-3xl">
-                  How to start
+                  Home
                 </a>
               </li>
               <li className="flex items-center justify-between">
-                <a href="/" className="text-3xl">
+                <a href="/about" className="text-3xl">
+                  About
+                </a>
+                {/* <Image src={ChevronDown} alt="chevron-down" /> */}
+              </li>
+              <li className="flex items-center justify-between">
+                <a href="/service" className="text-3xl">
                   Services
                 </a>
-                <Image src={ChevronDown} alt="chevron-down" />
-              </li>
-              <li className="flex items-center justify-between">
-                <a href="/" className="text-3xl">
-                  Technologies
-                </a>
-                <Image src={ChevronDown} alt="chevron-down" />
+                {/* <Image src={ChevronDown} alt="chevron-down" /> */}
               </li>
               <li>
-                <a href="/" className="text-3xl">
-                  Carrers
+                <a href="/team" className="text-3xl">
+                  Team
                 </a>
               </li>
             </ul>
