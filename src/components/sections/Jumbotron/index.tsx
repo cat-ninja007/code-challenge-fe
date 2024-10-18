@@ -9,7 +9,7 @@ import JumbotronImage from "../../../public/images/jumbotron-image.png"
 const Jumbotron: FC = () => {
   return (
     <>
-    <div className="jumbotron-container pb-7">
+    <div className="jumbotron-container pb-7 mt-20">
       <div className="jumbotron-image-container pb-9">
         <Image src={JumbotronImage} alt="jumbotron-image" />
       </div>

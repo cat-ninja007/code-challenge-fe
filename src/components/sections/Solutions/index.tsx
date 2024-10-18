@@ -1,6 +1,6 @@
-"use client"; 
+"use client";
 import { FC, useEffect, useState } from "react";
-import { motion } from "framer-motion"; 
+import { motion } from "framer-motion";
 import { Title, Subtitle } from "@/components/atom/Text";
 import SolutionsCard from "./SolutionsCard";
 
@@ -14,7 +14,7 @@ const Solutions: FC = () => {
       title: "Engineer your Solution",
       image: EngineerSolutions,
       paragraph:
-        "We promptly put together your nearshore engineering dream team to fulfill your specific requirements. We create the most elegant solution for your difficulties by combining our deep tech expertise, Top1% Tech Talent, and industry-specific expertise.", 
+        "We promptly put together your nearshore engineering dream team to fulfill your specific requirements. We create the most elegant solution for your difficulties by combining our deep tech expertise, Top1% Tech Talent, and industry-specific expertise.",
     },
     {
       title: "Architect Your Solution",
@@ -40,35 +40,37 @@ const Solutions: FC = () => {
 
   // show prev card
   const handlePrev = () => {
-    setCurrentIndex((prevIndex) => (prevIndex - 1 + solutions.length) % solutions.length);
+    setCurrentIndex(
+      (prevIndex) => (prevIndex - 1 + solutions.length) % solutions.length
+    );
   };
 
   // Check if window size is mobile or desktop
   useEffect(() => {
     const handleResize = () => {
-      setIsMobile(window.innerWidth < 765); 
+      setIsMobile(window.innerWidth < 765);
     };
 
     window.addEventListener("resize", handleResize);
-    handleResize(); 
+    handleResize();
 
-    return () => window.removeEventListener("resize", handleResize); 
+    return () => window.removeEventListener("resize", handleResize);
   }, []);
 
   // autoslide 3 seecond
   useEffect(() => {
-    let timer: NodeJS.Timeout | undefined; 
+    let timer: NodeJS.Timeout | undefined;
 
     if (isMobile) {
       timer = setInterval(handleNext, 3000);
     } else {
-      clearInterval(timer); 
+      clearInterval(timer);
     }
 
     return () => {
-      if (timer) clearInterval(timer); 
+      if (timer) clearInterval(timer);
     };
-  }, [isMobile]); 
+  }, [isMobile]);
 
   return (
     <>
@@ -87,16 +89,15 @@ const Solutions: FC = () => {
           </div>
         </div>
 
-      
         <div className="relative overflow-hidden">
           {isMobile ? (
             <motion.div
               key={solutions[currentIndex].title}
               className="flex justify-center items-center"
               initial={{ opacity: 0, x: 100 }}
-              animate={{ opacity: 1, x: 0 }} 
-              exit={{ opacity: 0, x: -100 }} 
-              transition={{ duration: 0.5 }} 
+              animate={{ opacity: 1, x: 0 }}
+              exit={{ opacity: 0, x: -100 }}
+              transition={{ duration: 0.5 }}
             >
               <SolutionsCard
                 title={solutions[currentIndex].title}
@@ -117,7 +118,7 @@ const Solutions: FC = () => {
             </div>
           )}
         </div>
-        
+
         {/* Navigasi untuk mobile */}
         {isMobile && (
           <div className="flex justify-center space-x-2 mt-7 pb-8">
@@ -140,7 +141,6 @@ const Solutions: FC = () => {
 };
 
 export default Solutions;
-
 
 // "use client";
 // import { FC, useEffect, useState } from "react";

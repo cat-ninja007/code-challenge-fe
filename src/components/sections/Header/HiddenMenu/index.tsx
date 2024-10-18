@@ -11,7 +11,7 @@ const HiddenMenu: FC<IHiddenMenu> = (props: IHiddenMenu) => {
   const { onClose } = props;
   return (
     <>
-      <div className="hidden-menu-container bg-courtney-white px-9 h-screen border-2 border-red-500 absolute top-0 left-0 right-0">
+      <div className="hidden-menu-container bg-courtney-white px-9 h-screen absolute top-0 left-0 right-0">
         <div className="close-button-container pt-6 pb-20 flex justify-end">
           <div onClick={onClose} className="cursor-pointer">
             <Image src={CloseButton} alt="close-button"/>

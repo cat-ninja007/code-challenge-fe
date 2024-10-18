@@ -26,7 +26,7 @@ const Header: FC = () => {
   };
   return (
     <>
-      <header>
+      <header className="fixed z-10 w-full top-0 bg-courtney-white">
         <div className="header-section px-4 h-20 flex justify-between items-center">
 
           {/* Logo */}
