@@ -1,7 +1,6 @@
 import { FC } from "react";
 import ButtonArrow from "@/components/atom/ButtonArrow";
 import Image from "next/image";
-import ChevronDown from "../../../../public/icons/utils-icon/chevron-down.png";
 import CloseButton from "../../../../public/icons/utils-icon/close-button.png";
 
 interface IHiddenMenu {
@@ -29,13 +28,13 @@ const HiddenMenu: FC<IHiddenMenu> = (props: IHiddenMenu) => {
                 <a href="/about" className="text-3xl">
                   About
                 </a>
-                {/* <Image src={ChevronDown} alt="chevron-down" /> */}
+                
               </li>
               <li className="flex items-center justify-between">
                 <a href="/service" className="text-3xl">
                   Services
                 </a>
-                {/* <Image src={ChevronDown} alt="chevron-down" /> */}
+                
               </li>
               <li>
                 <a href="/team" className="text-3xl">

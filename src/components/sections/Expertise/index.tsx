@@ -46,11 +46,11 @@ const Expertise: FC = () => {
   };
 
   // show prev card
-  const handlePrev = () => {
-    setCurrentIndex(
-      (prevIndex) => (prevIndex - 1 + expertise.length) % expertise.length
-    );
-  };
+  // const handlePrev = () => {
+  //   setCurrentIndex(
+  //     (prevIndex) => (prevIndex - 1 + expertise.length) % expertise.length
+  //   );
+  // };
 
   // Check if window size is mobile or desktop
   useEffect(() => {
