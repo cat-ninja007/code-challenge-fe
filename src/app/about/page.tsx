@@ -18,7 +18,7 @@ const About: FC = () => {
           <h2 className="text-2xl font-bold text-courtney-dark-blue mb-4">
             Company History
           </h2>
-          <p>
+          <p className="text-courtney-dark-blue ">
             Founded in 2010, our company has rapidly evolved from a small
             software startup into a leading provider of software development and
             outsourcing solutions. Over the years, we have built a reputation
@@ -35,7 +35,7 @@ const About: FC = () => {
           <h2 className="text-2xl font-bold text-courtney-dark-blue mb-4">
             Team
           </h2>
-          <p>
+          <p className="text-courtney-dark-blue ">
             Our team is composed of experts from various fields including
             software engineering, project management, and design. Each member is
             strategically selected for their skills and experience, ensuring
@@ -52,7 +52,7 @@ const About: FC = () => {
           <h2 className="text-2xl font-bold text-courtney-dark-blue mb-4">
             Culture
           </h2>
-          <p>
+          <p className="text-courtney-dark-blue ">
             At our software house, we cultivate a culture of openness,
             collaboration, and continuous improvement. We prioritize the
             well-being of our team members and encourage professional growth

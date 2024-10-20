@@ -10,7 +10,7 @@ export const Title: FC<IText> = (props: IText) => {
   return (
     <>
       <div className="jumbotron-title mb-5">
-        <h1 className={`text-4xl text-${color} font-bold leading-10`}>
+        <h1 className={`text-4xl lg:text-5xl text-${color} font-bold leading-10`}>
           {text}
         </h1>
       </div>

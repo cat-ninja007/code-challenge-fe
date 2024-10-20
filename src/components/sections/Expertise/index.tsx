@@ -83,7 +83,7 @@ const Expertise: FC = () => {
   return (
     <>
       <div className="expertise-container px-4 lg:px-[10%] pt-28 mb-32">
-        <div className="expertise-header lg:w-[40%]">
+        <div className="expertise-header lg:w-[70%]">
           <Subtitle text="Expertise" color="courtney-dark-blue" />
           <Title
             text="Hire Permanent and Remote Developers"

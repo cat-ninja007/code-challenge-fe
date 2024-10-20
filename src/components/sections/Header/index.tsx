@@ -26,7 +26,7 @@ const Header: FC = () => {
   };
   return (
     <>
-      <header className="fixed z-10 w-full top-0 bg-courtney-white">
+      <header className="fixed z-10 w-full top-0 bg-courtney-white lg:px-10">
         <div className="header-section px-4 h-20 flex justify-between items-center">
 
           {/* Logo */}
@@ -38,23 +38,23 @@ const Header: FC = () => {
           <nav className="hidden lg:flex justify-center mx-4">
             <ul className="flex justify-center space-x-8 text-courtney-dark-blue">
               <li>
-                <a href="/" className="text-xl">
+                <a href="/" className="text-xl lg:text-lg">
                   How to start
                 </a>
               </li>
               <li>
-                <a href="/" className="text-xl">
-                  Services
+                <a href="/about" className="text-xl lg:text-lg">
+                  About
                 </a>
               </li>
               <li>
-                <a href="/" className="text-xl">
-                  Technologies
+                <a href="/service" className="text-xl lg:text-lg">
+                  Service
                 </a>
               </li>
               <li>
-                <a href="/" className="text-xl">
-                  Careers
+                <a href="/team" className="text-xl lg:text-lg">
+                  Team
                 </a>
               </li>
             </ul>
@@ -71,6 +71,7 @@ const Header: FC = () => {
                 cursor-pointer 
                 px-4 
                 py-2
+                lg:text-md
 
                 ${
                   isActive
@@ -96,7 +97,7 @@ const Header: FC = () => {
             <nav>
               <ul className="text-courtney-dark-blue">
                 <li>
-                  <a href="/">Contact us</a>
+                  <a href="/" className="lg:text-lg">Contact us</a>
                 </li>
               </ul>
             </nav>

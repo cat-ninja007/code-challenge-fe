@@ -15,11 +15,11 @@ import Youtube from "../../../public/icons/contact-icon/youtube-icon.png";
 const Footer: FC = () => {
   return (
     <>
-      <div className="footer-container px-4 text-courtney-dark-blue border-t-2 border-courtney-soft-grey pt-10">
+      <div className="footer-container px-4 lg:px-10 text-courtney-dark-blue border-t-2 border-courtney-soft-grey pt-10">
         <div className="footer-top lg:flex justify-between">
         
         {/* Courtney Lanka */}
-          <div className="information-container w-1/4">
+          <div className="information-container lg:w-1/4">
             <div className="footer-logo pb-7">
               <Image src={FooterLogo} alt="footer-logo" className="pb-8" />
               <p className="text-lg pb-8">

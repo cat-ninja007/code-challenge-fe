@@ -10,7 +10,7 @@ import YouGet from '../../../public/icons/utils-icon/you-get.png'
 const HowToStart: FC = () => {
   return (
     <>
-    <div className="process-container bg-gradient-to-r from-courtney-light-yellow to-courtney-dark-yellow pb-8">
+    <div className="process-container bg-gradient-to-r from-courtney-light-yellow to-courtney-dark-yellow pb-8 lg:px-10">
       <div className="process-header flex flex-col items-center pt-16 px-16 pb-14">
         <Subtitle text="How to start" color="courtney-white" />
         <Title text="Easy Process" color="courtney-white" />
