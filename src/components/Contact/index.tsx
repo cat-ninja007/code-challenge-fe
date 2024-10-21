@@ -7,7 +7,7 @@ import ButtonArrow from "../atom/ButtonArrow";
 const Contact: FC = () => {
   return (
     <>
-      <div className="contact-section-container relative bg-courtney-soft-grey lg:flex lg:flex-row-reverse lg:items-center w-screen">
+      <div id="contact" className="contact-section-container relative bg-courtney-soft-grey lg:flex lg:flex-row-reverse lg:items-center w-screen">
         {/* <div className="contact-input-container mx-[18px] px-8 pt-9 bg-white border-2 border-green-500 relative mt-72 lg:mr-4 lg:rounded-tl-[17%] lg:py-20 lg:px-24 lg:my-24"> */}
         <div
           className="

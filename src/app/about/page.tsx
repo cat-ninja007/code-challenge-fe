@@ -8,11 +8,13 @@ const About: FC = () => {
   return (
     <>
       <Header />
-      <HeroSection
-        title="About Us"
-        subtitle="We specialize in helping you build a team of expert developers"
-      />
-      <div className="about-content px-4 mt-8">
+      <div>
+        <HeroSection
+          title="About Us"
+          subtitle="We specialize in helping you build a team of expert developers"
+        />
+      </div>
+      <div className="about-content px-4 lg:px-10 mt-8">
         {/* Company History Section */}
         <section className="mb-8">
           <h2 className="text-2xl font-bold text-courtney-dark-blue mb-4">

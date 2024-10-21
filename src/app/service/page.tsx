@@ -12,10 +12,12 @@ const Service: FC = () => {
   return (
     <>
       <Header />
+      <div>
       <HeroSection
         title="Our Service"
         subtitle="We specialize in helping you build a team of expert developers"
       />
+      </div>
       <div className="mt-20 px-4">
         <Subtitle text="Specialized" color="courtney-dark-blue" />
         <Title text="Specialized Staff We Provide" color="courtney-dark-blue" />
